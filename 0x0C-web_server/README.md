@@ -1,4 +1,4 @@
-0x0C - WEB SERVER
+NGINX SERVER
 
 TASK 1.
 STEP 1. THIS TASK MUST BE DONE ON YOUR SERVER
@@ -47,7 +47,7 @@ sudo apt install nginx
 
 # Verify that nginx is running:
 
-sudo service nginx  status
+sudo service status nginx
 
 //This command will display the status of nginx. If nginx is running,
 you should see a message indicating that it is active.
