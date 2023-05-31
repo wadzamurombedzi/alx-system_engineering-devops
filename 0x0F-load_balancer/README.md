@@ -1,5 +1,3 @@
-0x0F-LOAD BALANCER
-
 Installing HAProxy and configuring HAProxy
 $ sudo apt-get install -y haproxy=1.6.\*
 
@@ -12,8 +10,8 @@ frontend wadza.tech
 
 backend web_servers
         balance roundrobin
-        server 167154-web-01 35.175.128.220
-        server 167154-web-02 34.204.61.159
+        server 167154-web-01 52.91.152.79
+        server 167154-web-02 100.25.33.42
 ~
 ~
 :wq(to save and exit)
@@ -26,8 +24,8 @@ frontend wadza.tech
 
 backend web_servers
         balance roundrobin
-        server 167154-web-01 35.175.128.220
-        server 167154-web-02 34.204.61.159
+        server 167154-web-01 52.91.152.79
+        server 167154-web-02 100.25.33.42
 ' >> /etc/haproxy/haproxy.cfg
 
 $ service haproxy restart
